@@ -41,8 +41,13 @@ void MainWindow::digits_numbers()
     QPushButton *button = static_cast<QPushButton*>(sender());
       double numbers;
       QString new_label;
-      numbers = (ui->result_show->text()+ button->text()).toDouble();
-      new_label = QString::number(numbers,'g',15);
+
+      if(ui->result_show->text().contains(".") && button->text() == "0"){
+          new_label = ui->result_show->text() + button->text();
+      }else{
+         numbers = (ui->result_show->text()+ button->text()).toDouble();
+         new_label = QString::number(numbers,'g',15);
+      }
       ui->result_show->setText(new_label);
 }
 

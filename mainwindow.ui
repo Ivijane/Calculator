@@ -72,29 +72,6 @@ QPushButton:pressed {
      <string>AC</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_del">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>54</y>
-      <width>60</width>
-      <height>60</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-  background-color: rgb(215, 215, 215);
-  border: 1px solid gray;
-}
-QPushButton:pressed {
-    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                      stop: 0 #BEBEBE, stop: 1 #D7D7D7);
-}</string>
-    </property>
-    <property name="text">
-     <string>del</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton_percent">
     <property name="geometry">
      <rect>
@@ -467,8 +444,8 @@ QPushButton:pressed {
    <widget class="QPushButton" name="pushButton_plus_minus">
     <property name="geometry">
      <rect>
-      <x>1</x>
-      <y>290</y>
+      <x>60</x>
+      <y>54</y>
       <width>60</width>
       <height>60</height>
      </rect>
@@ -490,9 +467,9 @@ QPushButton:pressed {
    <widget class="QPushButton" name="pushButton_0">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>-1</x>
       <y>290</y>
-      <width>60</width>
+      <width>121</width>
       <height>60</height>
      </rect>
     </property>
